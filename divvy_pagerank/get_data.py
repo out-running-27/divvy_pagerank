@@ -4,6 +4,7 @@ import io
 import os
 import pandas as pd
 
+
 current_dir = os.path.dirname(__file__)
 data_dir = os.path.join(current_dir, "../data/")
 
@@ -35,11 +36,10 @@ def main():
         print("file already exists")
 
     # if not os.path.exists("../data/station_info.csv"):
-    print("getting station data")
-    get_ride_data()
+
     # else:
     #     print("file already exists")
-
+    print("getting station data")
     get_station_data()
 
 
